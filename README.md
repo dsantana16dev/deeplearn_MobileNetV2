@@ -22,17 +22,31 @@ Treinamos essas novas camadas com nossos dados
 
 
 🔧 Tecnologias e Conceitos aplicados:
+
 Conceito	Aplicado?	Como foi usado?
+
 Deep Learning	✅	Uso de rede CNN profunda (MobileNetV2)
+
 Transfer Learning	✅	Reutilização de pesos do ImageNet
+
 CNN (Convolutional)	✅	Arquitetura com convoluções, pooling e flatten
+
 Normalização de Imagem	✅	Imagens redimensionadas e normalizadas entre 0–1
+
 Data Pipeline com TFDS	✅	Uso de tensorflow_datasets para carregar e dividir o dataset
+
 Batching e Prefetching	✅	Uso de batch() e prefetch() para performance
 
+
 🔎 Criado upload de fotos para avaliação:
+
 Etapa	Descrição
+
 📤 files.upload()	Abre um botão de upload no Colab
+
 📸 Carrega imagem	Converte a imagem para o tamanho e formato esperado
+
 🔍 Predição	Usa seu modelo model.predict()
+
 🎯 Resultado	Mostra se é gato (0.00) ou cachorro (1.00) com a imagem e confiança
+
